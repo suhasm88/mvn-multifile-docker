@@ -1,7 +1,7 @@
 pipeline {
     agent any
         stages {
-             stage {
+             stage ('build stage') {
                steps {
                  script {
                     sh 'docker build -t my-firstpipe .'
